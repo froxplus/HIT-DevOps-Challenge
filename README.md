@@ -1,20 +1,32 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This is a sample project for the DevOps challenge. if you are reaching this repo it means you have passed the technical interview for the DevOps position in HIT (congratulations) and it's time for a challenge. Happy challenging...
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+To complete the challenge you should pass the following steps:
+1.  Clone project in a version control system of your choice
+2.  create a CI/CD pipeline to make the following steps
+    - bump version in version.txt
+        - if there are changes in requirements.txt you should bump the major version
+        - if there are changes in code you should bump the minor version
+        - if there are changes in README.MD you should bump the patch version
+    - create a container image with a tag equal to the version
+    - deploy it on a Kubernetes cluster
+4.  change code to print log with the following format to STDOUT
+    ```
+        {
+            "URL": "hit.local/version",
+            "time": "2022-01-01 14:22:33",
+            "client_ip":"0.0.0.0",
+            "service_name":"medusa"
+        }
+    ```
+5. deploy a log management service (aka Elasticsearch)
+6. redirect logs to the log management service
+7. deploy GUI for log management service and create a histogram for client IPs
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+execute all mentioned steps on your desired platform and make them ready for demo
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# RULES
+there are no rules for the challenge.
+you are free to use any software, tool, or procedure to complete the challenge
