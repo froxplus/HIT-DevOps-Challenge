@@ -45,4 +45,4 @@ There are no rules for this challenge.
 
 You are free to use any software, tool or procedure to complete the challenge.
 
-Happy building 🙌
+Happy building 🏗️
